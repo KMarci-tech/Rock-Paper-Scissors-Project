@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors Game</title>
+    <link rel="stylesheet" href="rock.css">
+</head>
+<body class="background">
+
+    
+    <div class="main-text">
+        <h3 id="won" class="neon-text">Nyert: 0</h3>
+        <h3 id="tie" class="neon-text">Döntetlen: 0</h3>
+        <h3 id="lost"class="neon-text">Vesztett: 0</h3>
+        <button id="restart" class="restart" type="button">Újra</button>
+    </div>
+
+    <div class="opponent">
+        <img id="opponent-rock" class="opponent-rock" src="./rps_képek/rock_pic_opponent.png" height="240px" width="240px" >
+        <img id="opponent-paper" class="opponent-paper" src="./rps_képek/paper_pic_opponent.png" height="240px" width="240px" >
+        <img id="opponent-scissors" class="opponent-scissors" src="./rps_képek/scissors_pic_opponent.png" height="240px" width="240px" >
+        
+    </div>
+
+    <div class="buttons">
+        <button id="rock" class="rock" type="button"></button>
+        <button id="paper" class="paper" type="button"></button>
+        <button id="scissors" class="scissors" type="button"></button>
+    </div>
+    
+
+
+
+    <script src="rock.js"></script>
+
+</body>
+</html>

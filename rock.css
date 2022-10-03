@@ -1,0 +1,172 @@
+
+.background {
+    background-image: url(./rps_képek/neon_background.jpg);
+}
+
+.main-text {
+    display: flex;
+    padding: 10px;
+    font-size: 45px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.buttons {
+    padding: 10px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.restart {
+    
+
+    position: relative;
+
+    left: 20px;
+
+    background-color: transparent;
+    height: 50px;
+    font-size: 20px;
+    color: #ffd8d8;
+    font-family: neon;
+    font-weight: bold;
+    border: 5px solid #ffd8d8;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    cursor: pointer;
+    border-radius: 100px;
+    transform: 1.5s;
+
+    visibility: hidden;
+}
+
+.restart:hover{
+
+    box-shadow:
+    .1vw 0vw .25vw #ffd8d8, .2vw 0vw .25vw #ffd8d8, .4vw 0vw .25vw #ffd8d8,
+
+    .1vw 0vw    0vw #f25757, .2vw 0vw    0vw #f25757, .4vw 0vw 0vw #f25757,
+    .1vw 0vw   .1vw #f25757, .2vw 0vw   .1vw #f25757, .4vw 0vw .1vw #f25757,
+    .1vw 0vw    2vw #f25757,  .2vw 0vw   2vw #f25757, .4vw 0vw 2vw #f25757,
+
+    .1vw 0vw    1vw #e50b0b, .2vw 0vw  1vw #e50b0b,   .4vw 0vw 5vw #e50b0b,
+    .1vw 0vw    5vw #e50b0b, .2vw 0vw 20vw #e50b0b,   .4vw 0vw 10vw #e50b0b,
+    .1vw 0vw   10vw #e50b0b, .2vw 0vw 30vw #e50b0b,   .4vw 0vw 10vw #e50b0b;
+
+
+    text-shadow: 
+    .1vw 0vw .25vw #ffd8d8, .2vw 0vw .25vw #ffd8d8, .4vw 0vw .25vw #ffd8d8,
+
+    .1vw 0vw    0vw #f25757, .2vw 0vw    0vw #f25757, .4vw 0vw 0vw #f25757,
+    .1vw 0vw   .1vw #f25757, .2vw 0vw   .1vw #f25757, .4vw 0vw .1vw #f25757,
+    .1vw 0vw    2vw #f25757,  .2vw 0vw   2vw #f25757, .4vw 0vw 2vw #f25757,
+
+    .1vw 0vw    1vw #e50b0b, .2vw 0vw  1vw #e50b0b,   .4vw 0vw 5vw #e50b0b,
+    .1vw 0vw    5vw #e50b0b, .2vw 0vw 20vw #e50b0b,   .4vw 0vw 10vw #e50b0b,
+    .1vw 0vw   10vw #e50b0b, .2vw 0vw 30vw #e50b0b,   .4vw 0vw 10vw #e50b0b;
+}
+
+.opponent {
+    text-align: center;
+    
+}
+
+.opponent-rock {
+    width: 240px;
+    height: 240px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, .5);
+    border: 1px;
+    border-radius: 2px;
+    visibility: hidden;
+}
+
+.opponent-paper {
+    width: 240px;
+    height: 240px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, .5);
+    border: 1px;
+    border-radius: 2px;
+    visibility: hidden;
+}
+
+.opponent-scissors {
+    width: 240px;
+    height: 240px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, .5);
+    border: 1px;
+    border-radius: 2px;
+    visibility: hidden;
+}
+
+
+
+
+
+
+.rock {
+    width: 240px;
+    height: 240px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, .5);
+    transition-duration: .60s;
+    background: url(./rps_képek/rock_pic.png);
+    background-size: cover;
+}
+
+
+.paper {
+    width: 240px;
+    height: 240px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, .5);
+    transition-duration: .60s;
+    background: url(./rps_képek/paper_pic.png);
+    background-size: cover;
+}
+
+.scissors {
+    width: 240px;
+    height: 240px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, .5);
+    transition-duration: .60s;
+    background: url(./rps_képek/scissors_pic.png);
+    background-size: cover;
+}
+
+.rock:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .5);
+    transform: scale(.95);
+}
+
+.paper:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .5);
+    transform: scale(.95);
+}
+
+.scissors:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .5);
+    transform: scale(.95);
+}
+
+@font-face {
+    font-family: neon;
+    src: url(NEON____.TTF);
+}
+
+.neon-text {
+    font-family: neon;
+    color: #ffd8d8;
+    text-shadow: 
+    .1vw 0vw .25vw #ffd8d8, .2vw 0vw .25vw #ffd8d8, .4vw 0vw .25vw #ffd8d8,
+
+    .1vw 0vw    0vw #f25757, .2vw 0vw    0vw #f25757, .4vw 0vw 0vw #f25757,
+    .1vw 0vw   .1vw #f25757, .2vw 0vw   .1vw #f25757, .4vw 0vw .1vw #f25757,
+    .1vw 0vw    2vw #f25757,  .2vw 0vw   2vw #f25757, .4vw 0vw 2vw #f25757,
+
+    .1vw 0vw    1vw #e50b0b, .2vw 0vw  1vw #e50b0b,   .4vw 0vw 5vw #e50b0b,
+    .1vw 0vw    5vw #e50b0b, .2vw 0vw 20vw #e50b0b,   .4vw 0vw 10vw #e50b0b,
+    .1vw 0vw   10vw #e50b0b, .2vw 0vw 30vw #e50b0b,   .4vw 0vw 10vw #e50b0b;
+    
+}
+
